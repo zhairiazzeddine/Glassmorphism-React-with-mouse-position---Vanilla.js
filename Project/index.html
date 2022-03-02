@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Small Project</title>
+
+  <style>
+   *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+.container{
+   width: 100%;
+   height: 100vh;
+   background-image: url(images/back.png);
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.card{
+   width: 90%;
+   max-width: 440px;
+   color :#fff;
+   text-align: center;
+   padding: 50px 35px;
+   border: 1px solid rgba(255,255,255,0.3);
+   background: rgba(255,255,255,0.2);
+   border-radius: 16px;
+   box-shadow: 0 9px 40px rgba(0,0,0,0.1);
+   backdrop-filter: blur(10px);
+}
+
+.card img{
+   width: 140px;
+   border-radius: 50%;
+}
+.card h2{
+   font-size: 40px;
+   font-weight: 600;
+   margin-top: 20px;
+}
+
+.card p{
+   font-size: 18px;
+   margin: 10px auto;
+   max-width: 330px;
+}
+.card .links img{
+   width: 40px;
+   border-radius: 50%;
+   margin: 10px 5px;
+   transition: background 0.5s;
+}
+.card .links img:hover{
+   background: #ff01cf;
+}
+.btn{
+   text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   font-weight: 500;
+   background: transparent;
+   border-color: #ffffff;
+   border: 2px solid #ffffff; /* Green */
+   color: #ffffff;
+   padding: 10px 30px;
+   border-radius: 30px;
+   margin:  30px 0 10px; /*ff01cf*/
+   transition: 0.5s;
+}
+
+.btn:hover{
+   text-decoration: none;
+   display: inline-block;
+   font-size: 18px;
+   font-weight: 500;
+   background: #ff01cf;
+   border-color: #ff01cf;
+   border: 2px solid #ff01cf; /* Green */
+   color: #ffffff;
+   padding: 10px 30px;
+   border-radius: 30px;
+   margin:  30px 0 10px; /*ff01cf*/
+}
+
+
+
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <div class="card" data-tilt data-tilt-glare="true"
+    data-tilt-max-glare="0.5"
+    data-tilt-speed="400"
+    data-tilt-scale="1.1"
+    data-tilt-perspective="500"
+    data-tilt-max="15"
+    data-tilt-scale="1.1">
+       <img src="images/profile.png">
+       <h2>Zhairi Azzeddine</h2>
+       <p>I'm a passionate Developer from Morocoo.</p>
+       <div class="links">
+          <a href="https://www.facebook.com/ZHAIRI.AZZEDDINE/"><img src="images/facebook.png"></a>
+          <a href="https://www.facebook.com/ZHAIRI.AZZEDDINE/"><img src="images/telegram.png"></a>
+          <a href="https://www.facebook.com/ZHAIRI.AZZEDDINE/"><img src="images/twitter.png"></a>
+       </div>
+       <a href="#" class="btn">Message me</a>
+    </div>
+ </div>
+ <script type="text/javascript" src="node_modules/vanilla-tilt/src/vanilla-tilt.js"></script>
+
+<script type="text/javascript" src="../dist/vanilla-tilt.js"></script>
+
+</body>
+</html>
